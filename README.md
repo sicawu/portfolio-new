@@ -21,3 +21,8 @@ npm install react-icons
 npm install -D tailwindcss
 npx tailwindcss init
 ```
+
+Timeline
+```
+npm i react-vertical-timeline-component
+```
