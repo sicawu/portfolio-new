@@ -3,6 +3,10 @@ import { useState, useEffect } from "react"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { PiTreePalmDuotone } from "react-icons/pi"
+import { CiLocationOn } from "react-icons/ci"
+import { IoCalendarOutline } from "react-icons/io5"
+
+
 
 function Timeline() {
     const API_URL = import.meta.env.VITE_API_URL
@@ -30,20 +34,29 @@ function Timeline() {
                 : (work.map((workExperience, index) => (
                     <VerticalTimelineElement
                         key={index}
-                        className="text-2xl"
                         contentStyle={{ background: '#D4E4DF' }}
                         contentArrowStyle={{ borderRight: '7px solid #D4E4DF ' }}
                         iconStyle={{ background: '#BACDC7', color: '#ffff' }}
                         icon={<PiTreePalmDuotone />}
                     >
-                        <h3 className="">{workExperience.name}</h3>
-                        <p>{workExperience.location}</p>
+                        <h3 className="text-xl">{workExperience.name}</h3>
+                        <div>
+                            <CiLocationOn />
+                            <p className="text-sm">{workExperience.location}</p>
+                        </div>
                         <p>{workExperience.description}</p>
-                        <p>{workExperience.startDate}</p>
-                        <p>{workExperience.endDate}</p>
+                        <div className="">
+                            <IoCalendarOutline />
+                            <p>{workExperience.startDate}</p>
+                            <p>{workExperience.endDate}</p>
+                        </div>
                         <div>
                             {workExperience.tags.map((tag, index) => (
-                                <label>{tag}</label>
+                                <label 
+                                key={index}
+                                className="bg-darkmint text-white mx-1 my-1 rounded text-sm"
+                                >{tag}
+                                </label>
                             ))}
                         </div>
                     </VerticalTimelineElement>
