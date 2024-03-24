@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import { PiTreePalmDuotone } from "react-icons/pi"
 import { CiLocationOn } from "react-icons/ci"
 import { IoCalendarOutline } from "react-icons/io5"
-
+import { LiaLaptopCodeSolid } from "react-icons/lia"
 
 
 function Timeline() {
@@ -37,19 +37,18 @@ function Timeline() {
                         contentStyle={{ background: '#D4E4DF' }}
                         contentArrowStyle={{ borderRight: '7px solid #D4E4DF ' }}
                         iconStyle={{ background: '#BACDC7', color: '#ffff' }}
-                        icon={<PiTreePalmDuotone />}
+                        icon={<LiaLaptopCodeSolid  />}
                     >
-                        <h3 className="text-xl">{workExperience.name}</h3>
+                        <h3 className="text-2xl">{workExperience.name}</h3>
+                        <div>
+                            <IoCalendarOutline />
+                            <p  className="text-xs">{workExperience.date}</p>
+                        </div>
                         <div>
                             <CiLocationOn />
-                            <p className="text-sm">{workExperience.location}</p>
+                            <p className="text-xs">{workExperience.location}</p>
                         </div>
                         <p>{workExperience.description}</p>
-                        <div className="">
-                            <IoCalendarOutline />
-                            <p>{workExperience.startDate}</p>
-                            <p>{workExperience.endDate}</p>
-                        </div>
                         <div>
                             {workExperience.tags.map((tag, index) => (
                                 <label 
