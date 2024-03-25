@@ -42,6 +42,10 @@ function Timeline() {
                         <h3 className="text-2xl">{workExperience.name}</h3>
                         <div>
                             <IoCalendarOutline />
+                            <p  className="text-xs">{workExperience.company}</p>
+                        </div>
+                        <div>
+                            <IoCalendarOutline />
                             <p  className="text-xs">{workExperience.date}</p>
                         </div>
                         <div>
