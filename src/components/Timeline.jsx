@@ -40,7 +40,7 @@ function Timeline() {
                         icon={<LiaLaptopCodeSolid  />}
                     >
                         <h3 className="text-2xl">{workExperience.name}</h3>
-                        <div>
+                        <div className="">
                             <IoCalendarOutline />
                             <p  className="text-xs">{workExperience.company}</p>
                         </div>
