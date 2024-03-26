@@ -9,7 +9,8 @@ export default {
       'mint': '#D4E4DF',
       'darkmint': '#BACDC7',
       'green': '#56605C',
-
+      'darkgreen': '#889692',
+      'beige': '#f1f0f0'
     },
     extend: {
       fontFamily: {

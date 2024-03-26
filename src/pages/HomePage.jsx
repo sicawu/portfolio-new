@@ -8,7 +8,7 @@ function HomePage() {
                 <img
                     src={mood}
                     alt="mood picture"
-                    className="max-h-screen max-w-1/2 w-auto" />
+                    className="max-h-screen w-1/2 h-auto resize-y" />
                 <div>
                     <h1 className="text-3xl">S. W.</h1>
                     <h2>Full Stack Developer & Online Marketing</h2>
