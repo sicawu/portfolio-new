@@ -37,7 +37,7 @@ function ProjectList() {
                             <div>
                                 <p>{project.description}</p>
                             </div>
-                            <div className="my-5">
+                            <div className="my-5 flex flex-wrap justify-center">
                                 {project.language.map((language, index) => (
                                     <label
                                         key={index}
@@ -47,7 +47,7 @@ function ProjectList() {
                                 ))}
                             </div>
                             <div className="flex justify-center gap-10">
-                            <Link to={`${project.deployedUrl}`}>
+                                <Link to={`${project.deployedUrl}`}>
                                     <TbWorldWww />
                                 </Link>
                                 <Link to={`${project.gitUrl}`}>

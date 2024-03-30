@@ -39,21 +39,17 @@ function Timeline() {
                         iconStyle={{ background: '#BACDC7', color: '#ffff' }}
                         icon={<LiaLaptopCodeSolid  />}
                     >
-                        <h3 className="text-2xl">{workExperience.name}</h3>
-                        <div className="">
-                            <IoCalendarOutline />
-                            <p  className="text-xs">{workExperience.company}</p>
-                        </div>
-                        <div>
-                            <IoCalendarOutline />
-                            <p  className="text-xs">{workExperience.date}</p>
-                        </div>
-                        <div>
+                        <h3 className="text-2xl mt-3">{workExperience.name}</h3>
+                        <div className="flex justify-center items-center">
                             <CiLocationOn />
-                            <p className="text-xs">{workExperience.location}</p>
+                            <p className="text-xs pl-2 pb-3">{workExperience.company} ({workExperience.location})</p>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <IoCalendarOutline className="ml-2" />
+                            <p  className="text-xs pl-2 pb-3">{workExperience.date}</p>
                         </div>
                         <p>{workExperience.description}</p>
-                        <div>
+                        <div className="flex flex-wrap justify-center">
                             {workExperience.tags.map((tag, index) => (
                                 <label 
                                 key={index}

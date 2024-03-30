@@ -1,17 +1,16 @@
 import Timeline from "../../src/components/Timeline"
-import mood from "../../public/img/mood-pic.jpg"
 
 function HomePage() {
     return (
         <>
-            <div className="h-screen flex justify-center items-center overflow-hidden">
-                <img
-                    src={mood}
+            <div className="hero h-screen flex justify-center items-center overflow-hidden">
+           {/*} <img
+                    src="./src/images/DSC06388.JPG"
                     alt="mood picture"
-                    className="max-h-screen w-1/2 h-auto resize-y" />
+    className="max-h-screen w-1/2 h-auto resize-y" /> */}
                 <div>
-                    <h1 className="text-3xl">S. W.</h1>
-                    <h2>Full Stack Developer & Online Marketing</h2>
+                    <h1 className="text-3xl text-beige bold">Simona Wurst</h1>
+                    <h2 className="text-beige">Full Stack Developer & Online Marketing</h2>
                 </div>
             </div>
             <div>
