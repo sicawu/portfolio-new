@@ -28,18 +28,18 @@ function Timeline() {
     }, [])
 
     return (
-        <VerticalTimeline lineColor={'#d4e4df'} style={Object}>
+<VerticalTimeline lineColor={'#d4e4df'} style={Object}>
             {work === null
                 ? (<p>Please wait</p>)
                 : (work.map((workExperience, index) => (
                     <VerticalTimelineElement
                         key={index}
-                        contentStyle={{ background: '#D4E4DF' }}
-                        contentArrowStyle={{ borderRight: '7px solid #D4E4DF ' }}
+                        contentStyle={{ background: '#f1f0f0' }}
+                        contentArrowStyle={{ borderRight: '7px solid #f1f0f0 ' }}
                         iconStyle={{ background: '#BACDC7', color: '#ffff' }}
                         icon={<LiaLaptopCodeSolid  />}
                     >
-                        <h3 className="text-2xl mt-3">{workExperience.name}</h3>
+                        <h3 className="text-2xl mt-3 font-gilda">{workExperience.name}</h3>
                         <div className="flex justify-center items-center">
                             <CiLocationOn />
                             <p className="text-xs pl-2 pb-3">{workExperience.company} ({workExperience.location})</p>

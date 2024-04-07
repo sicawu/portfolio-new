@@ -9,7 +9,7 @@ function Contact() {
     return (
         <>
             <div className="flex justify-center gap-7 py-8">
-                <div className="">
+                <div>
                 <Link
                     to="mailto:simona_wu@yahoo.de"
                     onClick={(e) => {
@@ -17,7 +17,7 @@ function Contact() {
                         e.preventDefault();
                     }}
                 >
-                    <IoIosMail />
+                    <IoIosMail className="w-12"/>
                 </Link>
 
                 </div>
