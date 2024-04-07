@@ -13,11 +13,18 @@ import NotFoundPage from "./pages/NotFoundPage"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 
+// Import library for SEO
+import { Helmet } from 'react-helmet'
+
 
 function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Simona Wurst | Web Development & SEO Specialist</title>
+        <meta name="description" content="Fullstack Web Dev with SEO background ✓ frontend & backend ✓ working remote & world-wide ✓ let's create together!" />
+      </Helmet>
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />

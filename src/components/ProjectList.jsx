@@ -43,7 +43,7 @@ function ProjectList() {
     return (
         <>
             <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-5">
                 {filteredProjects === null
                     ? (<p>Please wait</p>)
                     : (filteredProjects.map((project, index) => (

@@ -5,7 +5,7 @@ function HomePage() {
         <>
             <div className="hero h-screen flex justify-center items-end overflow-hidden">
                 <div>
-                    <h1 className="text-5xl text-beige  font-gilda bold">Simona Wurst</h1>
+                    <h1 className="my-10 mx-3 text-5xl text-beige  font-gilda bold">Simona Wurst</h1>
                     <div className="flex flex-wrap justify-center">
                         <div className="px-3 py-1 bg-green text-white mx-1 my-1 rounded text-sm shadow hover:bg-lightmint">
                             <h2 className="text-beige">Full Stack Developer </h2>

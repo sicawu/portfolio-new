@@ -4,13 +4,14 @@ import { Link } from "react-router-dom"
 function AboutPage() {
     return (
         <>
-            <div className="heroTwo h-screen flex flex-col justify-end items-center overflow-hidden">
-                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Welcome to my Online & Offline World</h1>
+            <div className="heroFour h-screen flex flex-col justify-end items-center overflow-hidden">
+                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Hi, my name is Simona.</h1>
+                <p className="text-md text-beige font-gilda mx-5">Born & raised in Germany, I currently work remotely while exploring the world's sparkle.</p>
             </div>
 
             <div className="py-20 px-5 bg-darkgreen">
-                <h2 className="text-2xl mb-5 font-gilda">Beyond the Digital World</h2>
-                <p className="font-gilda">What fills my heart with joy and lightens up my day. </p>
+                <h2 className="text-2xl mb-5 font-gilda">Welcome to my little World</h2>
+                <p className="font-gilda">In and beyond the digital world: this fills my heart with joy and brightens my day. </p>
             </div>
 
             <div className="grid md:grid-cols-2 sm:grid-cols-1">
