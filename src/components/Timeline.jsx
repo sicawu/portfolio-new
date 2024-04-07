@@ -53,7 +53,7 @@ function Timeline() {
                             {workExperience.tags.map((tag, index) => (
                                 <label 
                                 key={index}
-                                className="bg-darkmint text-white mx-1 my-1 rounded text-sm"
+                                className="bg-darkmint text-white mx-1 my-1 rounded text-sm shadow"
                                 >{tag}
                                 </label>
                             ))}

@@ -3,10 +3,13 @@ import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { FaGithub } from "react-icons/fa"
 import { TbWorldWww } from "react-icons/tb"
+import SearchBar from "../components/SearchBar"
+
 
 function ProjectList() {
     const API_URL = import.meta.env.VITE_API_URL
-    const [project, setProject] = useState(null)
+    const [project, setProject] = useState([])
+    const [searchTerm, setSearchTerm] = useState("")
 
     const getAllProjects = () => {
         axios.get(`${API_URL}/projects`)
@@ -23,16 +26,31 @@ function ProjectList() {
         getAllProjects()
     }, [])
 
+    const handleSearch = (event) => {
+        const searchValue = event.target.value;
+        setSearchTerm(searchValue);
+    }
+
+    const filteredProjects = project.filter((project) => {
+        const nameMatch = project.name.toLowerCase().includes(searchTerm.toLowerCase())
+        const languageMatch = project.language.some((language) =>
+            language.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+        return nameMatch || languageMatch
+    })
+
+
     return (
         <>
+            <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-10">
-                {project === null
+                {filteredProjects === null
                     ? (<p>Please wait</p>)
-                    : (project.map((project, index) => (
+                    : (filteredProjects.map((project, index) => (
                         <div key={index}
-                            className="bg-beige p-5">
+                            className="bg-beige p-5 shadow">
                             <div className="mb-5">
-                                <h2>{project.name}</h2>
+                                <h2 className="text-2xl font-gilda">{project.name}</h2>
                             </div>
                             <div>
                                 <p>{project.description}</p>
@@ -41,7 +59,7 @@ function ProjectList() {
                                 {project.language.map((language, index) => (
                                     <label
                                         key={index}
-                                        className="bg-darkmint text-white mx-1 my-1 rounded text-sm"
+                                        className="bg-darkmint text-white mx-1 my-1 rounded text-sm shadow hover:bg-lightmint"
                                     >{language}
                                     </label>
                                 ))}

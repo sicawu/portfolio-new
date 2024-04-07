@@ -12,6 +12,9 @@ export default {
       'darkgreen': '#889692',
       'beige': '#f1f0f0'
     },
+    fontFamily: {
+      gilda: ["Gilda", "sans-serif"]
+    },
     extend: {
       fontFamily: {
         nunito: ['"Nunito"', 'sans-serif']

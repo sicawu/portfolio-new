@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 function Contact() {
     return (
         <>
-            <div className="flex justify-around py-10 px-20">
+            <div className="flex justify-center gap-7 py-8">
                 <div className="">
                 <Link
                     to="mailto:simona_wu@yahoo.de"
