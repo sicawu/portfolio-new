@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 function Contact() {
     return (
         <>
-            <div className="flex justify-center gap-7 py-8">
+            <div className="flex justify-center gap-7 pt-8">
                 <div>
                 <Link
                     to="mailto:simona_wu@yahoo.de"
@@ -17,19 +17,19 @@ function Contact() {
                         e.preventDefault();
                     }}
                 >
-                    <IoIosMail className="w-12"/>
+                    <IoIosMail color="beige" size={30}/>
                 </Link>
 
                 </div>
                
                 <Link to="https://www.linkedin.com/in/simona-wurst-full-stack-dev-seo/">
-                    <FaLinkedin className=""/>
+                    <FaLinkedin color="beige" size={30}/>
                 </Link>
                 <Link to="https://www.xing.com/profile?sc_o=navigation_profile_icon&sc_o_PropActionOrigin=navigation_badge_no_badge">
-                    <FaXing />
+                    <FaXing color="beige" size={30}/>
                 </Link>
                 <Link to="https://github.com/sicawu?tab=repositories">
-                    <FaGithub />
+                    <FaGithub color="beige" size={30}/>
                 </Link>
             </div>
         </>

@@ -66,10 +66,10 @@ function ProjectList() {
                             </div>
                             <div className="flex justify-center gap-10">
                                 <Link to={`${project.deployedUrl}`}>
-                                    <TbWorldWww />
+                                    <TbWorldWww size={25}/>
                                 </Link>
                                 <Link to={`${project.gitUrl}`}>
-                                    <FaGithub />
+                                    <FaGithub size={25}/>
                                 </Link>
                             </div>
                         </div>
