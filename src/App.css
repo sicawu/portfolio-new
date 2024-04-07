@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .hero {
   background-image: url('../src/images/DSC06388.jpg'); 
   background-size: cover;

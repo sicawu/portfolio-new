@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { PiTreePalmDuotone } from "react-icons/pi"
 
 
@@ -12,10 +12,10 @@ function NavBar() {
                     </Link>
                 </ul>
                 <ul className="flex font-gilda uppercase">
-                    <li><Link to="/projects" className="mr-4">Projects</Link></li>
-                    <li><Link to="/work" className="mr-4">Work</Link></li>
-                    <li><Link to="/about" className="mr-4">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><NavLink to="/projects" className="mr-4" activeClassName="active">Projects</NavLink></li>
+                    <li><NavLink to="/work" className="mr-4" activeClassName="active">Work</NavLink></li>
+                    <li><NavLink to="/about" className="mr-4" activeClassName="active">About</NavLink></li>
+                    <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
                 </ul>
             </nav>
         </>
