@@ -17,8 +17,8 @@ function AboutPage() {
             <div className="grid md:grid-cols-2 sm:grid-cols-1">
                 <div className="h-screen w-full max-w-full overflow-hidden">
                     <img
-                        src="./src/images/Tote-Bag-Made-by-Mona-Etsy.jpg"
-                        alt="mood picture"
+                        src="../img/handmade-canvas-shopper-bag-beige.webp"
+                        alt="Handmade canvas shopper bag in beige"
                         className="h-full w-full object-cover" />
                 </div>
                 <div className="flex flex-col items-center justify-center mx-3">
