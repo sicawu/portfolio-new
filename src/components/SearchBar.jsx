@@ -9,7 +9,7 @@ function SearchBar({ searchTerm, handleSearch }) {
         placeholder="Search for skills e.g. HTML, React, MongoDB ..."
         value={searchTerm}
         onChange={handleSearch}
-        className="py-2 px-4 rounded-l-full flex-grow focus:outline-none"
+        className="py-2 px-4 font-gilda rounded-l-full flex-grow focus:outline-none"
       />
       <button className="flex items-center justify-center w-12 bg-darkgreen text-beige rounded-r">
         <FaSearch />
