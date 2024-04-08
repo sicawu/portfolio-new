@@ -45,8 +45,8 @@ function AboutPage() {
                 </div>
                 <div className="order-1 md:order-2 h-screen w-full max-w-full overflow-hidden">
                     <img
-                        src="./src/images/Yoga-Teacher-Training-Simona-Wurst.jpg"
-                        alt="mood picture"
+                        src="../img/yoga-and-meditation-class.webp"
+                        alt="Three female yogis while yoga and meditation class"
                         className="h-full w-full object-cover" />
                 </div>
             </div>
