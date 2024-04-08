@@ -18,7 +18,7 @@ function ProjectList() {
                 console.log(response.data)
             })
             .catch((err) => {
-                console.log("Error getting Cafes from the API...");
+                console.log("Error getting projects from the API...");
                 console.log(err);
             })
     }

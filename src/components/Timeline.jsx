@@ -19,7 +19,7 @@ function Timeline() {
                 console.log(response.data)
             })
             .catch((err) => {
-                console.log("Error getting Cafes from the API...");
+                console.log("Error getting work experience from the API...");
                 console.log(err);
             })
     }
