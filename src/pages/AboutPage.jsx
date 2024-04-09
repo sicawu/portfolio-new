@@ -10,8 +10,8 @@ function AboutPage() {
             </div>
 
             <div className="py-20 px-5 bg-darkgreen">
-                <h2 className="text-2xl mb-5 font-gilda">Welcome to my Little World</h2>
-                <p className="font-gilda">Although I am super interested in the digital world and love the dynamic and evolving nature of it, there's also an offline girl behind that finds balance in crafting, creativity, exploring and movement. Discover what fills my heart with joy and brightens my day besides SEO & Web Dev. </p>
+                <h2 className="text-2xl text-beige mb-5 font-gilda">Welcome to my Little World</h2>
+                <p className="text-beige font-gilda">Although I am super interested in the digital world and love the dynamic and evolving nature of it, there's also an offline girl behind that finds balance in crafting, creativity, exploring and movement. Discover what fills my heart with joy and brightens my day besides SEO & Web Dev. </p>
             </div>
 
             <div className="grid md:grid-cols-2 sm:grid-cols-1">

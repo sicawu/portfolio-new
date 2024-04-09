@@ -1,5 +1,3 @@
-import Timeline from "../../src/components/Timeline"
-
 function HomePage() {
     const labels = ["Full Stack Developer", "Online Marketing Manager", "SEO Specialist", "Digital Nomad", "Creative Soul"]
     return (
