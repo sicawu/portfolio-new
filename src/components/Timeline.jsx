@@ -46,9 +46,9 @@ function Timeline() {
                         </div>
                         <div className="flex justify-center items-center">
                             <IoCalendarOutline className="ml-2" />
-                            <p className="text-xs pl-2 pb-3">{workExperience.date}</p>
+                            <p className="text-xs font-gilda pl-2 pb-3">{workExperience.date}</p>
                         </div>
-                        <p className="font-gilda">{workExperience.description}</p>
+                        <p>{workExperience.description}</p>
                         <div className="flex flex-wrap justify-center">
                             {workExperience.tags.map((tag, index) => (
                                 <label
