@@ -5,13 +5,13 @@ function AboutPage() {
     return (
         <>
             <div className="heroFour h-screen flex flex-col justify-end items-center overflow-hidden">
-                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Hi, my name is Simona.</h1>
+                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Hi, This is Simona.</h1>
                 <p className="text-md text-beige font-gilda mx-5">Born & raised in Germany, I currently work remotely while exploring the world's sparkle.</p>
             </div>
 
             <div className="py-20 px-5 bg-darkgreen">
                 <h2 className="text-2xl mb-5 font-gilda">Welcome to my Little World</h2>
-                <p className="font-gilda">Although I am super interested in the digital world and love the dynamic and evolving nature of it, there's also an offline girl behind that finds balance in crafting, creativity, exploring and movement. Discover what fills my heart with joy and brightens my day besides SEO & web dev. </p>
+                <p className="font-gilda">Although I am super interested in the digital world and love the dynamic and evolving nature of it, there's also an offline girl behind that finds balance in crafting, creativity, exploring and movement. Discover what fills my heart with joy and brightens my day besides SEO & Web Dev. </p>
             </div>
 
             <div className="grid md:grid-cols-2 sm:grid-cols-1">
@@ -40,7 +40,7 @@ function AboutPage() {
                     <h2 className="my-10 text-2xl font-gilda">Yoga & Meditation - How I Recharge</h2>
                     <p className="font-gilda">Yoga is a huge game-changer in my life. It helps me to slow down, recharge my batteries and reconnect to myself in a busteling world. And the good thing: I can practice everywhere and at any time. </p>
                     <p className="my-3 font-gilda">Completing a yoga teacher training in Pai (TH) helped me to deepen my knowledge, practice in a safe way, gain strength and confidence in what I do.</p>
-                    <p className="font-gilda">The biggest learning since I started 5 years ago has been acceptance. Accepting that everyone has their own story and individual (physical) prerequisites. Which you need to pay attention to not only while teaching but also working together with.</p>
+                    <p className="font-gilda">The biggest learning since I started 5 years ago has been acceptance. Accepting that everyone has their own story and individual (physical) prerequisites. Being enough, as you are. Which you need to pay attention to not only while teaching but also working together with.</p>
 
                 </div>
                 <div className="order-1 md:order-2 h-screen w-full max-w-full overflow-hidden">
