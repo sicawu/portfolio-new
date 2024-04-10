@@ -8,41 +8,30 @@
 }
 
 .hero {
-  background-image: url('../img/working-in-a-chic-cafe.webp'); 
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 100px 0;
   margin:0;
   height: 100vh;
+}
+
+.heroOne {
+  background-image: url('../img/working-in-a-chic-cafe.webp'); 
 }
 
 .heroTwo {
   background-image: url('../img/working-remote-in-a-beautiful-cafe-in-Bangkok.webp'); 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  margin:0;
-  height: 100vh;
 }
 
 .heroThree {
   background-image: url('../img/website-development-code-in-a-coffee-shop-Bangkok.webp'); 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  margin:0;
-  height: 100vh;
 }
 
 .heroFour {
   background-image: url('../img/working-as-digital-nomad-in-Bangkok.webp'); 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  margin:0;
-  height: 100vh;
+}
+
+.heroFive {
+  background-image: url('../img/road-with-palmtrees-Koh-Kood-Thailand.JPEG'); 
 }

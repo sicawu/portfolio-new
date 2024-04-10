@@ -2,7 +2,7 @@ function HomePage() {
     const labels = ["Full Stack Developer", "Online Marketing Manager", "SEO Specialist", "Digital Nomad", "Creative Soul"]
     return (
         <>
-            <div className="hero h-screen flex justify-center items-end overflow-hidden">
+            <div className="hero heroOne h-screen flex justify-center items-end overflow-hidden">
                 <div>
                     <h1 className="my-10 mx-3 text-5xl text-beige  font-gilda bold">Simona Wurst</h1>
                     <div className="flex flex-wrap justify-center">

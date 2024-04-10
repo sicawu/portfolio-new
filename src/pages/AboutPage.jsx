@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function AboutPage() {
     return (
         <>
-            <div className="heroFour h-screen flex flex-col justify-end items-center overflow-hidden">
+            <div className="hero heroFour h-screen flex flex-col justify-end items-center overflow-hidden">
                 <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Hi, This is Simona.</h1>
                 <p className="text-md text-beige font-gilda mx-5">Born & raised in Germany, I currently work remotely while exploring the world's sparkle.</p>
             </div>

@@ -2,7 +2,7 @@ import Contact from "../../src/components/Contact"
 
 function ContactPage() {
     return (
-        <div className="heroTwo h-screen flex justify-center items-end overflow-hidden">
+        <div className="hero heroTwo h-screen flex justify-center items-end overflow-hidden">
 
         <div className="mx-10">
             <h1 className="mb-5 text text-4xl text-beige font-gilda">Let's Create Together!</h1>
