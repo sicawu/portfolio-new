@@ -5,7 +5,7 @@ function AboutPage() {
     return (
         <>
             <div className="hero heroFour h-screen flex flex-col justify-end items-center overflow-hidden">
-                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Nice To Meet You!</h1>
+                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Get To Know Me</h1>
             </div>
 
             <div className="py-20 px-5 bg-darkgreen">

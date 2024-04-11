@@ -4,7 +4,7 @@
 }
 
 .navbar {
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .active {
@@ -15,9 +15,9 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-bottom: 56px;
+  padding: 115px 0;
   margin:0;
-  height: calc(100vh - 2540px);
+  height: calc(100& - 2540px);
 }
 
 .heroOne {

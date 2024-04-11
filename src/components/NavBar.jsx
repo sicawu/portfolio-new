@@ -5,7 +5,7 @@ import { PiTreePalmDuotone } from "react-icons/pi"
 function NavBar() {
     return (
         <>
-            <nav className="sticky top-0 flex justify-between px-4 py-4 bg-mint shadow">
+            <nav className="navbar sticky top-0 flex justify-between px-4 py-4 bg-mint shadow">
                 <ul className="flex flex-row">
                     <Link to="/" className="flex items-center">
                         <li className="mr-2"><PiTreePalmDuotone size={20}/></li>
