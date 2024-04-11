@@ -10,7 +10,8 @@ export default {
       'darkmint': '#BACDC7',
       'green': '#56605C',
       'darkgreen': '#889692',
-      'beige': '#f1f0f0'
+      'beige': '#f1f0f0',
+      'brown': '#545454'
     },
     fontFamily: {
       gilda: ["Gilda", "sans-serif"]

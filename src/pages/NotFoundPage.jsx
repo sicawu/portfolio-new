@@ -10,14 +10,14 @@ function NotFoundPage() {
                     <div className="flex flex-col justify-center gap-2">
                         {poem.map((poemLine, index) =>
                             <div key={index}>
-                                <h2 className="text-2xl font-gilda text-beige bg-green mx-5 py-1">{poemLine}</h2>
+                                <h2 className="text-2xl font-gilda text-beige bg-green bg-opacity-70 mx-5 py-1">{poemLine}</h2>
                             </div>
                         )}
                     </div>
                     <Link to="/contact">
                         <button
-                            className="inline-flex items-center justify-center h-9 my-10 p-3 text-beige bg-darkgreen border border-darkmint rounded-lg focus:outline-none hover:bg-darkgreen-100 hover:text-beige-700 shadow"
-                        >Trust the Process
+                            className="inline-flex items-center justify-center h-9 my-10 p-3 bg-green text-beige border border-green rounded-lg focus:outline-none hover:bg-darkmint shadow"
+                            >Trust the Process
                         </button>
                     </Link>
                 </div>

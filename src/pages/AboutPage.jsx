@@ -28,7 +28,7 @@ function AboutPage() {
                     <p className="font-gilda">Therefore, I carefully select high-quality fabrics and pay attention to natural, durable materials and designs that are timeless. Adding a creative twist.</p>
                     <Link to="https://www.etsy.com/de/shop/MadebyMonaAtelier?ref=profile_header">
                         <button
-                            className="inline-flex items-center justify-center h-7 my-10 mr-3 px-3 font-gilda text-s text-gray-900 bg-mint border border-darkmint rounded-lg focus:outline-none hover:bg-darkgreen-100 hover:text-beige-700 shadow"
+                            className="inline-flex items-center justify-center h-9 mt-5 mb-10 p-3 text-beige bg-darkgreen border border-darkmint rounded-lg focus:outline-none hover:bg-darkmint shadow"
                         >Visit Etsy Online Shop
                         </button>
                     </Link>

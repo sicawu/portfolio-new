@@ -9,7 +9,6 @@ function Contact() {
     return (
         <>
             <div className="flex justify-center gap-7 pt-8">
-                <div>
                 <Link
                     to="mailto:simona_wu@yahoo.de"
                     onClick={(e) => {
@@ -17,19 +16,16 @@ function Contact() {
                         e.preventDefault();
                     }}
                 >
-                    <IoIosMail color="beige" size={30}/>
+                    <IoIosMail color="beige" size={30} />
                 </Link>
-
-                </div>
-               
                 <Link to="https://www.linkedin.com/in/simona-wurst-full-stack-dev-seo/">
-                    <FaLinkedin color="beige" size={30}/>
+                    <FaLinkedin color="beige" size={30} />
                 </Link>
                 <Link to="https://www.xing.com/profile?sc_o=navigation_profile_icon&sc_o_PropActionOrigin=navigation_badge_no_badge">
-                    <FaXing color="beige" size={30}/>
+                    <FaXing color="beige" size={30} />
                 </Link>
                 <Link to="https://github.com/sicawu?tab=repositories">
-                    <FaGithub color="beige" size={30}/>
+                    <FaGithub color="beige" size={30} />
                 </Link>
             </div>
         </>

@@ -11,7 +11,7 @@ function SearchBar({ searchTerm, handleSearch }) {
         onChange={handleSearch}
         className="py-2 px-4 font-gilda rounded-l-full flex-grow focus:outline-none"
       />
-      <button className="flex items-center justify-center w-12 bg-darkgreen text-beige rounded-r">
+      <button className="flex items-center justify-center w-12 bg-darkgreen text-beige rounded-r hover:bg-mint">
         <FaSearch />
       </button>
     </div>
