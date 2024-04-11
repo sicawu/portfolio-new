@@ -11,13 +11,23 @@ function HomePage() {
                     <Link to="/work">
                         <div className="flex flex-wrap justify-center">
                             {labels.map((label, index) =>
-                                <div key={index} className="px-3 py-2 bg-brown mx-1 my-1 rounded shadow">
+                                <div key={index} className="px-3 py-2 bg-brown mx-1 my-1 rounded hover:bg-green shadow">
                                     <h2 className="text-beige font-gilda">{label}</h2>
                                 </div>
                             )}
                         </div>
                     </Link>
                 </div>
+            </div>
+            <div className="py-20 px-5 bg-darkgreen">
+                <h2 className="text-2xl text-beige mb-5 font-gilda">Let's Start Our Journey</h2>
+                <p className="text-beige font-gilda">Any new project in mind? I'd love to hear about it.</p>
+                <Link to="/contact">
+                    <button
+                        className="inline-flex items-center justify-center h-9 mt-5 p-3 text-beige bg-darkmint border-2 border-darkmint rounded-lg focus:outline-none hover:bg-mint shadow"
+                    >Get in Touch
+                    </button>
+                </Link>
             </div>
         </>
     )

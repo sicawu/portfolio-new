@@ -14,7 +14,7 @@ function WorkPage() {
                 <p className="text-beige font-gilda">During the Ironhack web dev bootcamp in 2024, we instantly put our knowledge into practice. As a result, I already have a small portfolio of deployed web apps. But this is just the beginning as I am currently improving my skills.</p>
                 <Link to="/projects">
                     <button
-                        className="inline-flex items-center justify-center h-9 mt-5 p-3 text-beige bg-darkgreen border-2 border-darkmint rounded-lg focus:outline-none hover:bg-darkmint shadow"
+                        className="inline-flex items-center justify-center h-9 mt-5 p-3 text-beige bg-darkmint border-2 border-darkmint rounded-lg focus:outline-none hover:bg-mint shadow"
                     >Explore All Coding Projects
                     </button>
                 </Link>

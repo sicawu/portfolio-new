@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.navbar {
+  z-index: 1000;
+}
+
 .active {
   font-weight: bold;
 }
@@ -11,9 +15,9 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 100px 0;
+  padding-bottom: 56px;
   margin:0;
-  height: 100vh;
+  height: calc(100vh - 2540px);
 }
 
 .heroOne {

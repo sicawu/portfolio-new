@@ -5,13 +5,13 @@ function AboutPage() {
     return (
         <>
             <div className="hero heroFour h-screen flex flex-col justify-end items-center overflow-hidden">
-                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Hi, This is Simona.</h1>
-                <p className="text-md text-beige font-gilda mx-5">Born & raised in Germany, I currently work remotely while exploring the world's sparkle.</p>
+                <h1 className="my-10 mx-3 text-4xl text-beige font-gilda">Nice To Meet You!</h1>
             </div>
 
             <div className="py-20 px-5 bg-darkgreen">
                 <h2 className="text-2xl text-beige mb-5 font-gilda">Welcome to my Little World</h2>
-                <p className="text-beige font-gilda">Although I am super interested in the digital world and love the dynamic and evolving nature of it, there's also an offline girl behind that finds balance in crafting, creativity, exploring and movement. Discover what fills my heart with joy and brightens my day besides SEO & Web Dev. </p>
+                <p className="text-md text-beige font-gilda mb-5">Born & raised in Germany, I currently work remotely while exploring the world's sparkle.</p>
+                <p className="text-beige font-gilda">And although I am super interested in the digital world and love the dynamic and evolving nature of it, there's also an offline girl behind that finds balance in crafting, creativity, exploring and movement. Discover what fills my heart with joy and brightens my day besides SEO & Web Dev. </p>
             </div>
 
             <div className="grid md:grid-cols-2 sm:grid-cols-1">
@@ -64,6 +64,17 @@ function AboutPage() {
                     <p className="my-3 font-gilda">As an AOWD who has dived in the Maldives, Indonesia, Croatia, and more, this passion has strengthened my adaptability to rapidly changing environments and increased my self-awareness and resilience. While having a lot of fun exploring nature in a respectful and safe way of course.</p>
                     <p className="font-gilda">Same as in the digital world, I am always into the tec (equipment) stuff and mastering skills. Next step: Rescue Diver.</p>
                 </div>
+            </div>
+
+            <div className="py-20 px-5 bg-darkgreen">
+                <h2 className="text-2xl text-beige mb-5 font-gilda">Let's Start Our Journey</h2>
+                <p className="text-beige font-gilda">Any new project in mind? I'd love to hear about it.</p>
+                <Link to="/contact">
+                    <button
+                        className="inline-flex items-center justify-center h-9 mt-5 p-3 text-beige bg-darkmint border-2 border-darkmint rounded-lg focus:outline-none hover:bg-mint shadow"
+                    >Get in Touch
+                    </button>
+                </Link>
             </div>
         </>
     )
