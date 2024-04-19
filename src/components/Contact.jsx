@@ -10,7 +10,7 @@ function Contact() {
         <>
             <div className="flex justify-center gap-7 pt-8">
                 <Link
-                    to="mailto:simona_wu@yahoo.de"
+                    to="mailto:work.simona.wurst@gmail.com"
                     onClick={(e) => {
                         window.location.href = mailto;
                         e.preventDefault();
