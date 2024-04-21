@@ -6,11 +6,20 @@
   <link rel="icon" href="./img/Palmtree-Favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simona Wurst | Web Development & SEO Specialist</title>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=${process.env.RECAPTCHA_SITE_KEY}"></script>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6LeFQsEpAAAAAB881O_XZ6f2DjSbdMzCvZ8WtHmw', {action: 'LOGIN'});
+      });
+    }
+  </script>
 </body>
 
 </html>
