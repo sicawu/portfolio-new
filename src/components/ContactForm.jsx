@@ -19,10 +19,6 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        //if (!recaptcha) {
-        //    alert("Verify that you are human :)");
-        //    return
-        //}
 
         const newLoveletter = {
             name: name,
@@ -43,6 +39,7 @@ function ContactForm() {
                 console.log(e)
             })
     }
+
 
     return (
         <>

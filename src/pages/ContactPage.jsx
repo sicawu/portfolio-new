@@ -28,10 +28,6 @@ function ContactPage() {
                     <IoCloudDownloadOutline />Download CV (EN)
                 </button>
             </div>
-
-            <div>
-                <ContactForm />
-            </div>
         </>
     )
 }
