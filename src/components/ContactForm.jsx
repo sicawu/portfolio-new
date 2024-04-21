@@ -19,7 +19,6 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         //if (!recaptcha) {
         //    alert("Verify that you are human :)");
         //    return
@@ -84,8 +83,8 @@ function ContactForm() {
                                 onChange={handleMessage}
                             />
                         </label>
-
                         <ReCAPTCHA
+                        className="flex justify-center pt-5"
                             ref={recaptchaRef}
                             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
                             onChange={handleRecaptcha}
