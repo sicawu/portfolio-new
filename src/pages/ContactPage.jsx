@@ -7,7 +7,7 @@ import { IoCloudDownloadOutline } from "react-icons/io5"
 function ContactPage() {
 
     const handleDownload = () => {
-        saveAs("../img/CV-Simona-Wurst-EN.pdf", "CV-Simona-Wurst.pdf")
+        saveAs("../img/CV-Simona-Wurst-EN-Web.pdf", "CV-Simona-Wurst.pdf")
     }
 
     return (
