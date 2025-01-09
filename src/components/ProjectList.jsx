@@ -69,7 +69,7 @@ function ProjectList() {
                             <h2 className="text-2xl font-gilda text-gray-800 mb-2">
                                 {project.name}
                             </h2>
-                            <p className="text-gray-600 line-clamp-3">
+                            <p className="text-gray-600">
                                 {project.description}
                             </p>
                         </div>
