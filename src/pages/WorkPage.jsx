@@ -5,8 +5,8 @@ function WorkPage() {
     return (
         <>
             <div className="hero heroThree h-screen flex flex-col justify-end items-center overflow-hidden">
-                <h1 className="mb-5 text-4xl text-beige font-gilda">Work Experience</h1>
-                <p className="text-md text-beige font-gilda mx-5">From Full Stack Developer to (SEO) Online Marketing Manager to my Dual bachelor's degree in Tourism Economics. Get to know my background & skills.</p>
+            <h1 className="my-10 mx-3 text-4xl md:text-5xl text-beige font-gilda tracking-wide animate-fade-in">Work Experience</h1>
+            <p className="text-md text-beige font-gilda mx-5">From Full Stack Developer to (SEO) Online Marketing Manager to my Dual bachelor's degree in Tourism Economics. Get to know my background & skills.</p>
             </div>
             <Timeline />
             <div className="py-20 px-5 bg-darkgreen">
