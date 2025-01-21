@@ -13,6 +13,7 @@ export default {
       'beige': '#f1f0f0',
       'brown': '#545454'
     },
+    
     fontFamily: {
       gilda: ["Gilda", "sans-serif"]
     },

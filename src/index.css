@@ -6,3 +6,8 @@
     font-family: "Gilda";
     src: url("../fonts/GildaDisplay-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}

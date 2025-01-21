@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 function AboutPage() {
     return (
         <div className="bg-white">
-             <div className="hero heroThree h-screen flex flex-col justify-end items-center overflow-hidden">
-            <h1 className="my-10 mx-3 text-4xl md:text-5xl text-beige font-gilda tracking-wide animate-fade-in">A Little Dive Behind the Scenes</h1>
+             <div className="hero heroSix h-screen flex flex-col justify-end items-center overflow-hidden">
+            <h1 className="my-10 mx-3 text-4xl md:text-5xl text-beige font-gilda tracking-wide animate-fade-in">A Little Dive <br/>Behind the Scenes</h1>
             <p className="text-md text-beige font-gilda mx-5">Glad, you're here! Let me introduce myself.</p>
             </div>
 
