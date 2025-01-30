@@ -16,9 +16,10 @@ import Footer from "./components/Footer"
 // Import library for SEO
 import { Helmet } from 'react-helmet'
 
-// GA Tracking Hooks
+// GA Tracking Hooks & Consent Banner
 import usePageView from "./hooks/usePageView"
 import useLinkTracking from "./hooks/useLinkTracking"
+import CookieConsentBanner from './components/CookieConsentBanner'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
   useLinkTracking()
   return (
     <>
+      <CookieConsentBanner />
       <Helmet>
         <title>Simona Wurst | Web Development & SEO Specialist</title>
         <meta name="description" content="Fullstack Web Dev with SEO background ✓ frontend & backend ✓ working remote & world-wide ✓ let's create together!" />
