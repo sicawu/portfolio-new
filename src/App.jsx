@@ -18,14 +18,12 @@ import { Helmet } from 'react-helmet'
 
 // GA Tracking Hooks
 import usePageView from "./hooks/usePageView"
-import useLinkTracking from "./hooks/useLinkTracking";
+import useLinkTracking from "./hooks/useLinkTracking"
 
 
 function App() {
   usePageView()
   useLinkTracking()
-  const GA_ID = import.meta.env.VITE_GA_ID;
-  console.log("Google Analytics ID:", GA_ID);
   return (
     <>
       <Helmet>
