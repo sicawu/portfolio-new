@@ -1,13 +1,92 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Local Fonts */
 @font-face {
     font-family: "Gilda";
-    src: url("../fonts/GildaDisplay-Regular.ttf");
+    src: url("../fonts/GildaDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-ExtraLight.ttf");
+    src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Global Styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        min-width: 320px;
+        font-family: "Nunito", sans-serif;
+        color: #56605C;
+        background-color: #F1F0F0;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Gilda", serif;
+        font-weight: 400;
+    }
+
+    button, input, textarea, select {
+        font: inherit;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+        outline: 2px solid #56605C;
+        outline-offset: 4px;
+    }
+
+    ::selection {
+        background-color: #BACDC7;
+        color: #56605C;
+    }
+}
+
+/* Handwritten Font */
+@layer components {
+    .handwritten {
+        font-family: "Caveat", cursive;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

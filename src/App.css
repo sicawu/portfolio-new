@@ -1,45 +1,50 @@
+
 #root {
-  margin: 0 auto;
-  text-align: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
+/* Navigation */
 .navbar {
-  z-index: 10000;
+    z-index: 10000;
 }
 
-.active {
-  font-weight: bold;
-}
-
+/* Hero Sections */
 .hero {
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 115px 0;
-  margin:0;
-  height: calc(100 - 2540px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 115px 0;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
+/* Hero Images */
 .heroOne {
-  background-image: url('../img/simona-wurst-web-dev-working-in-a-cafe.JPG'); 
+    background-image: url('../img/simona-wurst-web-dev-working-in-a-cafe.JPG');
 }
 
 .heroTwo {
-  background-image: url('../img/working-remote-in-a-beautiful-cafe-in-Bangkok.webp'); 
+    background-image: url('../img/working-remote-in-a-beautiful-cafe-in-Bangkok.webp');
 }
 
 .heroThree {
-  background-image: url('../img/website-development-code-in-a-coffee-shop-Bangkok.webp'); 
+    background-image: url('../img/website-development-code-in-a-coffee-shop-Bangkok.webp');
 }
 
 .heroFour {
-  background-image: url('../img/working-as-digital-nomad-in-Bangkok.webp'); 
+    background-image: url('../img/working-as-digital-nomad-in-Bangkok.webp');
 }
 
 .heroFive {
-  background-image: url('../img/road-with-palmtrees-koh-kood-in-thailand.webp'); 
+    background-image: url('../img/road-with-palmtrees-koh-kood-in-thailand.webp');
 }
 
 .heroSix {
-  background-image: url('../img/Taucherin-im-Neopren-auf-Boot-mit-Blick-auf-Insel-auf-den-Malediven.webp'); 
+    background-image: url('../img/Taucherin-im-Neopren-auf-Boot-mit-Blick-auf-Insel-auf-den-Malediven.webp');
 }
