@@ -4,6 +4,20 @@ import Timeline from "../components/Timeline"
 import { PiArrowDown, PiArrowUpRight } from "react-icons/pi"
 
 function WorkPage() {
+    const digitalCertificates = [
+        "Page-Speed, SEO (2021, 121 Watt)",
+        "Google-Ads, SEA (2020, 121 Watt)",
+        "Advanced Facebook-Ads (2020, 121 Watt)",
+    ]
+
+    const maritimeCertificates = [
+        "STCW Basic Safety Training (exp. 09/31)",
+        "RYA Powerboat Level II",
+        "PADI Dive Master + Nitrox",
+        "ENG1 Medical Certificate (exp. 09/28)",
+        "Australian Sailing Start Crewing & Helming",
+    ]
+
     return (
         <main className="bg-beige">
 
@@ -17,7 +31,7 @@ function WorkPage() {
                 </p>
 
                 <h1 className="font-gilda text-5xl md:text-7xl text-beige mb-6">
-                    Work Experience.
+                    Work Experience
                 </h1>
 
                 <p className="font-nunito text-base md:text-lg text-beige/90 max-w-2xl mx-auto leading-relaxed">
@@ -47,7 +61,7 @@ function WorkPage() {
                     </p>
 
                     <h2 className="font-gilda text-3xl md:text-5xl mb-8">
-                        Different fields, one curious mind.
+                        A quick summary of my journey.
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 md:gap-16">
@@ -62,20 +76,21 @@ function WorkPage() {
 
                         <p className="font-nunito text-base md:text-lg leading-relaxed text-beige/90">
                             Over time, my curiosity for all things digital
-                            led me further into the technical side of things.
+                            led me further into the technical side of websites.
                             From SEO and website optimisation to coding my own applications,
                             I'm constantly learning, experimenting and
                             finding new ways to bring ideas to life.
-                            And sometimes, there's an unexpected side quest being a yacht chef in the Caribbean.
-
+                            And sometimes, there's an unexpected side quest:
+                            being a yacht chef in the Caribbean.
                         </p>
+
                     </div>
 
                 </div>
             </section>
 
 
-            {/* Timeline */}
+            {/* Work Experience Timeline */}
             <section className="bg-beige px-5 py-20 md:py-28">
 
                 <div className="max-w-5xl mx-auto">
@@ -86,7 +101,7 @@ function WorkPage() {
                         </p>
 
                         <h2 className="font-gilda text-4xl md:text-5xl text-darkgreen mb-4">
-                            Experience & Education.
+                            Work Experience
                         </h2>
 
                         <p className="font-nunito text-gray-600 max-w-2xl leading-relaxed">
@@ -102,62 +117,73 @@ function WorkPage() {
             </section>
 
 
-
             {/* Education & Qualifications */}
-            <section className="bg-beige px-6 py-14 md:py-16">
-                <div className="max-w-4xl mx-auto">
+            <section className="bg-white px-6 py-16 md:py-20">
 
-                    {/* Section heading */}
-                    <div className="mb-8">
-                        <p className="font-nunito text-xs uppercase tracking-[0.2em] text-green mb-2">
-                            A little more about my background
+                <div className="max-w-5xl mx-auto">
+
+                    <div className="mb-10">
+                        <p className="font-nunito text-sm uppercase tracking-[0.2em] text-green mb-3">
+                            Always learning
                         </p>
+
                         <h2 className="font-gilda text-3xl md:text-4xl text-darkgreen">
                             Education & Qualifications
                         </h2>
-                        <div className="w-12 h-0.5 bg-darkmint mt-4"></div>
+
+                        <p className="font-nunito text-brown/70 mt-3 max-w-2xl leading-relaxed">
+                            A mix of formal education, technical training
+                            and qualifications picked up along the way.
+                        </p>
                     </div>
 
-                    <div className="space-y-7">
 
-                        {/* 01 - Bachelor's Degree */}
-                        <div>
-                            <p className="font-nunito text-xs font-semibold tracking-widest text-green mb-2">
+                    {/* Degree & Web Development */}
+                    <div className="grid md:grid-cols-2 gap-5 mb-5">
+
+                        {/* Bachelor's Degree */}
+                        <div className="bg-beige p-6 md:p-8 rounded-sm">
+                            <p className="font-nunito text-xs font-semibold tracking-[0.2em] text-green mb-4">
                                 01 — EDUCATION
                             </p>
-                            <h3 className="font-gilda text-2xl text-darkgreen">
-                                Bachelor's Degree
+
+                            <h3 className="font-gilda text-2xl text-darkgreen mb-2">
+                                Dual Bachelor's Degree
                             </h3>
-                            <p className="font-nunito text-sm font-semibold text-brown mt-1">
-                                Tourism Management
+
+                            <p className="font-nunito text-sm font-semibold text-brown">
+                                Tourism Economics
                             </p>
-                            <p className="font-nunito text-sm text-brown/70">
-                                University · Germany
+
+                            <p className="font-nunito text-sm text-brown/70 mt-1">
+                                IU Duales Studium Düsseldorf · Germany
                             </p>
                         </div>
 
-                        <div className="border-t border-darkmint/70"></div>
 
-                        {/* 02 - Web Development */}
-                        <div>
-                            <p className="font-nunito text-xs font-semibold tracking-widest text-green mb-2">
+                        {/* Web Development */}
+                        <div className="bg-mint p-6 md:p-8 rounded-sm">
+                            <p className="font-nunito text-xs font-semibold tracking-[0.2em] text-darkgreen/70 mb-4">
                                 02 — TECHNICAL TRAINING
                             </p>
-                            <h3 className="font-gilda text-2xl text-darkgreen">
+
+                            <h3 className="font-gilda text-2xl text-darkgreen mb-2">
                                 Web Development
                             </h3>
-                            <p className="font-nunito text-sm font-semibold text-brown mt-1">
+
+                            <p className="font-nunito text-sm font-semibold text-darkgreen">
                                 Full-Stack Web Development Bootcamp
                             </p>
-                            <p className="font-nunito text-sm text-brown/70 mb-3">
+
+                            <p className="font-nunito text-sm text-darkgreen/70 mt-1 mb-4">
                                 Ironhack · 2024
                             </p>
 
                             <div className="flex flex-wrap gap-2">
-                                {["JavaScript", "React", "Node.js", "Express", "MongoDB"].map((skill) => (
+                                {["JavaScript (ES6)", "React", "Node.js", "Express", "MongoDB", "HTML5", "CSS3"].map((skill) => (
                                     <span
                                         key={skill}
-                                        className="bg-mint text-darkgreen font-nunito text-xs px-3 py-1 rounded-sm"
+                                        className="bg-white/60 text-darkgreen font-nunito text-xs px-3 py-1 rounded-sm"
                                     >
                                         {skill}
                                     </span>
@@ -165,49 +191,58 @@ function WorkPage() {
                             </div>
                         </div>
 
-                        <div className="border-t border-darkmint/70"></div>
-
-                        {/* 03 - Certificates */}
-                        <div>
-                            <p className="font-nunito text-xs font-semibold tracking-widest text-green mb-2">
-                                03 — CERTIFICATES
-                            </p>
-                            <h3 className="font-gilda text-2xl text-darkgreen mb-5">
-                                Additional Qualifications
-                            </h3>
-
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                <div>
-                                    <h4 className="font-nunito font-bold text-sm text-darkgreen mb-2">
-                                        Digital Marketing
-                                    </h4>
-                                    <ul className="font-nunito text-sm text-brown/80 space-y-1">
-                                        <li>Google Ads</li>
-                                        <li>Google Analytics</li>
-                                        <li>SEO Training</li>
-                                    </ul>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-nunito font-bold text-sm text-darkgreen mb-2">
-                                        Maritime & Diving
-                                    </h4>
-                                    <ul className="font-nunito text-sm text-brown/80 space-y-1">
-                                        <li>STCW Basic Safety Training</li>
-                                        <li>Powerboat Level II</li>
-                                        <li>PADI Divemaster</li>
-                                        <li>ENG1</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
+
+                    {/* Certificates */}
+                    <div className="bg-darkgreen p-6 md:p-8 rounded-sm">
+
+                        <p className="font-nunito text-xs font-semibold tracking-[0.2em] text-mint mb-4">
+                            03 — CERTIFICATES
+                        </p>
+
+                        <h3 className="font-gilda text-2xl text-beige mb-6">
+                            Additional Qualifications
+                        </h3>
+
+                        <div className="grid sm:grid-cols-2 gap-8">
+
+                            <div>
+                                <h4 className="font-nunito font-bold text-sm text-mint mb-3">
+                                    Digital Marketing
+                                </h4>
+
+                                <ul className="font-nunito text-sm text-beige/90 space-y-2">
+                                    {digitalCertificates.map((certificate) => (
+                                        <li key={certificate}>
+                                            {certificate}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 className="font-nunito font-bold text-sm text-mint mb-3">
+                                    Maritime & Diving
+                                </h4>
+
+                                <ul className="font-nunito text-sm text-beige/90 space-y-2">
+                                    {maritimeCertificates.map((certificate) => (
+                                        <li key={certificate}>
+                                            {certificate}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
 
-            {/* Coding projects CTA */}
+            {/* Coding Projects CTA */}
             <section className="bg-mint px-6 py-20 md:py-28">
 
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -232,7 +267,7 @@ function WorkPage() {
                         </p>
 
                         <p className="font-nunito text-darkgreen/80 leading-relaxed mb-8">
-                            From recipe planning apps to LLM based tools,
+                            From recipe planning apps to LLM-based tools,
                             there's always something new taking shape.
                             And this is just the beginning.
                         </p>
