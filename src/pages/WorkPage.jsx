@@ -31,7 +31,7 @@ function WorkPage() {
                 </p>
 
                 <h1 className="font-gilda text-5xl md:text-7xl text-beige mb-6">
-                    Work Experience
+                    Experience & Education.
                 </h1>
 
                 <p className="font-nunito text-base md:text-lg text-beige/90 max-w-2xl mx-auto leading-relaxed">
@@ -61,7 +61,7 @@ function WorkPage() {
                     </p>
 
                     <h2 className="font-gilda text-3xl md:text-5xl mb-8">
-                        A quick summary of my journey.
+                        A Quick Summary Of My Progression.
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 md:gap-16">
@@ -101,7 +101,7 @@ function WorkPage() {
                         </p>
 
                         <h2 className="font-gilda text-4xl md:text-5xl text-darkgreen mb-4">
-                            Work Experience
+                            Work Experience.
                         </h2>
 
                         <p className="font-nunito text-gray-600 max-w-2xl leading-relaxed">
@@ -128,7 +128,7 @@ function WorkPage() {
                         </p>
 
                         <h2 className="font-gilda text-3xl md:text-4xl text-darkgreen">
-                            Education & Qualifications
+                            Education & Qualifications.
                         </h2>
 
                         <p className="font-nunito text-brown/70 mt-3 max-w-2xl leading-relaxed">
@@ -155,11 +155,11 @@ function WorkPage() {
                                 Tourism Economics
                             </p>
 
-                            <p className="font-nunito text-sm text-brown/70 mt-1">
+                            <p className="font-nunito text-sm text-brown/70 mt-1 mb-4">
                                 IU Duales Studium · 2014-2018 · Düsseldorf, Germany
                             </p>
                             <p className="font-nunito text-sm font-semibold text-brown">
-                                “User Experience & Tourism Websites: The Role and Potential of Travel Inspiration Landing Pages in Creating a Successful Online Presence.”
+                                Bachelor's thesis: “User Experience & Tourism Websites: The Role and Potential of Travel Inspiration Landing Pages in Creating a Successful Online Presence.”
                             </p>
                         </div>
 
@@ -262,7 +262,7 @@ function WorkPage() {
 
                     <div>
                         <p className="font-nunito text-darkgreen/80 text-base md:text-lg leading-relaxed mb-8">
-                            During my Ironhack Web Development Bootcamp and self-studies,
+                            During my Full-Stack Development Bootcamp and self-studies,
                             I got to put theory into practice straight away.
                             Since then, I've been working on my own projects,
                             exploring new technologies and getting more

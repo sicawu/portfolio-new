@@ -32,11 +32,7 @@ function HomePage() {
                         Hello World.
                     </h1>
 
-                    <p className="text-lg md:text-2xl text-beige font-nunito max-w-2xl mx-auto leading-relaxed mb-12">
-                        Welcome to my little corner of the internet.
-                        I'm Simona — a curious mind with a passion for
-                        creating, exploring & broadening the horizon.
-                    </p>
+      
 
                     {/* Professional identities */}
                     <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-3 max-w-3xl mx-auto mb-12">
