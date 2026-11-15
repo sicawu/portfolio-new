@@ -70,12 +70,12 @@ function WorkPage() {
                             My professional journey hasn't exactly followed
                             a straight line. With a background in Tourism
                             Management, I spent several years working in
-                            online marketing, focusing on the German and
+                            online marketing and e-commerce, focusing on the German and
                             European markets.
                         </p>
 
                         <p className="font-nunito text-base md:text-lg leading-relaxed text-beige/90">
-                            Over time, my curiosity for all things digital
+                            From the beginning, my curiosity for all things digital
                             led me further into the technical side of websites.
                             From SEO and website optimisation to coding my own applications,
                             I'm constantly learning, experimenting and
@@ -156,7 +156,10 @@ function WorkPage() {
                             </p>
 
                             <p className="font-nunito text-sm text-brown/70 mt-1">
-                                IU Duales Studium Düsseldorf · Germany
+                                IU Duales Studium · 2014-2018 · Düsseldorf, Germany
+                            </p>
+                            <p className="font-nunito text-sm font-semibold text-brown">
+                                “User Experience & Tourism Websites: The Role and Potential of Travel Inspiration Landing Pages in Creating a Successful Online Presence.”
                             </p>
                         </div>
 
@@ -168,15 +171,15 @@ function WorkPage() {
                             </p>
 
                             <h3 className="font-gilda text-2xl text-darkgreen mb-2">
-                                Web Development
+                                Full-Stack Development
                             </h3>
 
                             <p className="font-nunito text-sm font-semibold text-darkgreen">
-                                Full-Stack Web Development Bootcamp
+                                Intensive full-time bootcamp in Web Development including three finished projects, several mini projects and labs. Both individual coding and pair-coding.
                             </p>
 
                             <p className="font-nunito text-sm text-darkgreen/70 mt-1 mb-4">
-                                Ironhack · 2024
+                                Ironhack · January-March 2024
                             </p>
 
                             <div className="flex flex-wrap gap-2">
