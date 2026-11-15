@@ -13,11 +13,11 @@ function WorkPage() {
                 <div className="absolute inset-0 bg-black/30 -z-10"></div>
 
                 <p className="font-nunito text-sm uppercase tracking-[0.25em] text-mint mb-5">
-                    A little bit of everything
+                    The journey from studies to work
                 </p>
 
                 <h1 className="font-gilda text-5xl md:text-7xl text-beige mb-6">
-                    A Journey of Many Turns.
+                    Work Experience.
                 </h1>
 
                 <p className="font-nunito text-base md:text-lg text-beige/90 max-w-2xl mx-auto leading-relaxed">
@@ -57,15 +57,19 @@ function WorkPage() {
                             a straight line. With a background in Tourism
                             Management, I spent several years working in
                             online marketing, focusing on the German and
-                            English-speaking markets.
+                            European markets.
                         </p>
 
                         <p className="font-nunito text-base md:text-lg leading-relaxed text-beige/90">
                             Over time, my curiosity for all things digital
                             led me further into the technical side of things.
-                            From SEO and websites to coding my own applications,
+                            From SEO and website optimisation to coding my own applications,
                             I'm constantly learning, experimenting and
                             finding new ways to bring ideas to life.
+                        </p>
+
+                        <p className="font-nunito text-base md:text-lg leading-relaxed text-beige/90">
+                            And sometimes, there's an unexpected side quest being a yacht chef in the Caribbean.
                         </p>
 
                     </div>
@@ -101,6 +105,91 @@ function WorkPage() {
             </section>
 
 
+            {/* Education & Certificates */}
+            <section className="bg-white px-6 py-20 md:py-28">
+
+                <div className="max-w-5xl mx-auto">
+
+                    <div className="max-w-2xl mb-12">
+                        <p className="font-nunito text-sm uppercase tracking-[0.2em] text-green mb-4">
+                            Always learning
+                        </p>
+
+                        <h2 className="font-gilda text-4xl md:text-5xl text-darkgreen mb-5">
+                            Things I've Learned Along the Way.
+                        </h2>
+
+                        <p className="font-nunito text-gray-600 leading-relaxed">
+                            From university degrees to professional qualifications
+                            and courses, here's a collection of things I've studied,
+                            explored and achieved.
+                        </p>
+                    </div>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                        {[
+                            {
+                                title: "Bachelor's Degree",
+                                subtitle: "Tourism  Economics",
+                                detail: "University · Germany",
+                                icon: "🎓"
+                            },
+                            {
+                                title: "Web Development",
+                                subtitle: "Ironhack Bootcamp",
+                                detail: "2024",
+                                icon: "💻"
+                            },
+                            {
+                                title: "STCW",
+                                subtitle: "Basic Safety Training",
+                                detail: "Maritime qualification",
+                                icon: "⚓"
+                            },
+                            {
+                                title: "ENG1",
+                                subtitle: "Seafarer Medical",
+                                detail: "Maritime qualification",
+                                icon: "🩺"
+                            },
+                            {
+                                title: "Powerboat Level 2",
+                                subtitle: "Powerboat Handling",
+                                detail: "Practical qualification",
+                                icon: "🚤"
+                            },
+                            {
+                                title: "PADI Divemaster",
+                                subtitle: "Professional Diving",
+                                detail: "PADI",
+                                icon: "🤿"
+                            }
+                        ].map((item, index) => (
+                            <div
+                                key={index}
+                                className="bg-beige rounded-xl p-6 border border-darkmint/40 hover:shadow-md transition-shadow duration-300"
+                            >
+                                <span className="text-2xl">{item.icon}</span>
+
+                                <h3 className="font-gilda text-xl text-darkgreen mt-5 mb-1">
+                                    {item.title}
+                                </h3>
+
+                                <p className="font-nunito text-darkgreen font-semibold text-sm">
+                                    {item.subtitle}
+                                </p>
+
+                                <p className="font-nunito text-gray-500 text-xs mt-3">
+                                    {item.detail}
+                                </p>
+                            </div>
+                        ))}
+
+                    </div>
+                </div>
+            </section>
+
             {/* Coding projects CTA */}
             <section className="bg-mint px-6 py-20 md:py-28">
 
@@ -112,13 +201,13 @@ function WorkPage() {
                         </p>
 
                         <h2 className="font-gilda text-4xl md:text-5xl text-darkgreen mb-6">
-                            Curious about what I've been building?
+                            Curious about what I've been coding?
                         </h2>
                     </div>
 
                     <div>
                         <p className="font-nunito text-darkgreen/80 text-base md:text-lg leading-relaxed mb-8">
-                            During my Ironhack Web Development Bootcamp in 2024,
+                            During my Ironhack Web Development Bootcamp and self-studies,
                             I got to put theory into practice straight away.
                             Since then, I've been working on my own projects,
                             exploring new technologies and getting more
@@ -126,7 +215,7 @@ function WorkPage() {
                         </p>
 
                         <p className="font-nunito text-darkgreen/80 leading-relaxed mb-8">
-                            From recipe apps to travel-inspired ideas,
+                            From recipe planning apps to LLM based tools,
                             there's always something new taking shape.
                             And this is just the beginning.
                         </p>
