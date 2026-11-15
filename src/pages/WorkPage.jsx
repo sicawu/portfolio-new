@@ -66,12 +66,9 @@ function WorkPage() {
                             From SEO and website optimisation to coding my own applications,
                             I'm constantly learning, experimenting and
                             finding new ways to bring ideas to life.
-                        </p>
-
-                        <p className="font-nunito text-base md:text-lg leading-relaxed text-beige/90">
                             And sometimes, there's an unexpected side quest being a yacht chef in the Caribbean.
-                        </p>
 
+                        </p>
                     </div>
 
                 </div>
@@ -105,90 +102,110 @@ function WorkPage() {
             </section>
 
 
-            {/* Education & Certificates */}
-            <section className="bg-white px-6 py-20 md:py-28">
 
-                <div className="max-w-5xl mx-auto">
+            {/* Education & Qualifications */}
+            <section className="bg-beige px-6 py-14 md:py-16">
+                <div className="max-w-4xl mx-auto">
 
-                    <div className="max-w-2xl mb-12">
-                        <p className="font-nunito text-sm uppercase tracking-[0.2em] text-green mb-4">
-                            Always learning
+                    {/* Section heading */}
+                    <div className="mb-8">
+                        <p className="font-nunito text-xs uppercase tracking-[0.2em] text-green mb-2">
+                            A little more about my background
                         </p>
-
-                        <h2 className="font-gilda text-4xl md:text-5xl text-darkgreen mb-5">
-                            Things I've Learned Along the Way.
+                        <h2 className="font-gilda text-3xl md:text-4xl text-darkgreen">
+                            Education & Qualifications
                         </h2>
-
-                        <p className="font-nunito text-gray-600 leading-relaxed">
-                            From university degrees to professional qualifications
-                            and courses, here's a collection of things I've studied,
-                            explored and achieved.
-                        </p>
+                        <div className="w-12 h-0.5 bg-darkmint mt-4"></div>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div className="space-y-7">
 
-                        {[
-                            {
-                                title: "Bachelor's Degree",
-                                subtitle: "Tourism  Economics",
-                                detail: "University · Germany",
-                                icon: "🎓"
-                            },
-                            {
-                                title: "Web Development",
-                                subtitle: "Ironhack Bootcamp",
-                                detail: "2024",
-                                icon: "💻"
-                            },
-                            {
-                                title: "STCW",
-                                subtitle: "Basic Safety Training",
-                                detail: "Maritime qualification",
-                                icon: "⚓"
-                            },
-                            {
-                                title: "ENG1",
-                                subtitle: "Seafarer Medical",
-                                detail: "Maritime qualification",
-                                icon: "🩺"
-                            },
-                            {
-                                title: "Powerboat Level 2",
-                                subtitle: "Powerboat Handling",
-                                detail: "Practical qualification",
-                                icon: "🚤"
-                            },
-                            {
-                                title: "PADI Divemaster",
-                                subtitle: "Professional Diving",
-                                detail: "PADI",
-                                icon: "🤿"
-                            }
-                        ].map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-beige rounded-xl p-6 border border-darkmint/40 hover:shadow-md transition-shadow duration-300"
-                            >
-                                <span className="text-2xl">{item.icon}</span>
+                        {/* 01 - Bachelor's Degree */}
+                        <div>
+                            <p className="font-nunito text-xs font-semibold tracking-widest text-green mb-2">
+                                01 — EDUCATION
+                            </p>
+                            <h3 className="font-gilda text-2xl text-darkgreen">
+                                Bachelor's Degree
+                            </h3>
+                            <p className="font-nunito text-sm font-semibold text-brown mt-1">
+                                Tourism Management
+                            </p>
+                            <p className="font-nunito text-sm text-brown/70">
+                                University · Germany
+                            </p>
+                        </div>
 
-                                <h3 className="font-gilda text-xl text-darkgreen mt-5 mb-1">
-                                    {item.title}
-                                </h3>
+                        <div className="border-t border-darkmint/70"></div>
 
-                                <p className="font-nunito text-darkgreen font-semibold text-sm">
-                                    {item.subtitle}
-                                </p>
+                        {/* 02 - Web Development */}
+                        <div>
+                            <p className="font-nunito text-xs font-semibold tracking-widest text-green mb-2">
+                                02 — TECHNICAL TRAINING
+                            </p>
+                            <h3 className="font-gilda text-2xl text-darkgreen">
+                                Web Development
+                            </h3>
+                            <p className="font-nunito text-sm font-semibold text-brown mt-1">
+                                Full-Stack Web Development Bootcamp
+                            </p>
+                            <p className="font-nunito text-sm text-brown/70 mb-3">
+                                Ironhack · 2024
+                            </p>
 
-                                <p className="font-nunito text-gray-500 text-xs mt-3">
-                                    {item.detail}
-                                </p>
+                            <div className="flex flex-wrap gap-2">
+                                {["JavaScript", "React", "Node.js", "Express", "MongoDB"].map((skill) => (
+                                    <span
+                                        key={skill}
+                                        className="bg-mint text-darkgreen font-nunito text-xs px-3 py-1 rounded-sm"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        <div className="border-t border-darkmint/70"></div>
+
+                        {/* 03 - Certificates */}
+                        <div>
+                            <p className="font-nunito text-xs font-semibold tracking-widest text-green mb-2">
+                                03 — CERTIFICATES
+                            </p>
+                            <h3 className="font-gilda text-2xl text-darkgreen mb-5">
+                                Additional Qualifications
+                            </h3>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 className="font-nunito font-bold text-sm text-darkgreen mb-2">
+                                        Digital Marketing
+                                    </h4>
+                                    <ul className="font-nunito text-sm text-brown/80 space-y-1">
+                                        <li>Google Ads</li>
+                                        <li>Google Analytics</li>
+                                        <li>SEO Training</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 className="font-nunito font-bold text-sm text-darkgreen mb-2">
+                                        Maritime & Diving
+                                    </h4>
+                                    <ul className="font-nunito text-sm text-brown/80 space-y-1">
+                                        <li>STCW Basic Safety Training</li>
+                                        <li>Powerboat Level II</li>
+                                        <li>PADI Divemaster</li>
+                                        <li>ENG1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </section>
+
 
             {/* Coding projects CTA */}
             <section className="bg-mint px-6 py-20 md:py-28">
