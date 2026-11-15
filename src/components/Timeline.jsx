@@ -1,79 +1,115 @@
+
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
 import { CiLocationOn } from "react-icons/ci"
 import { IoCalendarOutline } from "react-icons/io5"
-import { LiaLaptopCodeSolid } from "react-icons/lia"
-
+import { PiBriefcase, PiGraduationCap } from "react-icons/pi"
 
 function Timeline() {
     const API_URL = import.meta.env.VITE_API_URL
-    const [work, setWork] = useState(null)
 
-    const getAllWork = () => {
+    const [work, setWork] = useState(null)
+    const [error, setError] = useState(false)
+
+    useEffect(() => {
         axios.get(`${API_URL}/work`)
             .then((response) => {
                 setWork(response.data)
-                console.log(response.data)
             })
             .catch((err) => {
-                console.log("Error getting work experience from the API...");
-                console.log(err);
+                console.error("Error getting work experience:", err)
+                setError(true)
             })
+    }, [API_URL])
+
+    if (error) {
+        return (
+            <p className="font-nunito text-gray-600">
+                Couldn't load the timeline. Please try again later.
+            </p>
+        )
     }
-    useEffect(() => {
-        getAllWork()
-    }, [])
+
+    if (work === null) {
+        return (
+            <p className="font-nunito text-gray-600">
+                Loading my journey...
+            </p>
+        )
+    }
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            <VerticalTimeline lineColor={'#d4e4df'} style={Object}>
-                {work === null
-                    ? (<p>Please wait</p>)
-                    : (work.map((workExperience, index) => (
-                        <VerticalTimelineElement
-                            key={index}
-                            contentStyle={{
-                                background: '#f1f0f0',
-                                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-                                borderRadius: '0.5rem'
-                            }}
-                            contentArrowStyle={{
-                                borderRight: '7px solid #f1f0f0'
-                            }}
-                            iconStyle={{
-                                background: '#BACDC7',
-                                color: '#fff',
-                                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'
-                            }}
-                            icon={<LiaLaptopCodeSolid />}
-                        >
-                            <div className="hover:transform hover:scale-[1.02] transition-all duration-300">
-                                <h3 className="text-2xl font-gilda text-gray-800 mb-3">{workExperience.name}</h3>
-                                <div className="flex justify-center items-center">
-                                    <CiLocationOn className="ml-2 mt-2 text-darkmint"/>
-                                    <p className="text-sm font-gilda italic pl-2 text-gray-600">{workExperience.company} ({workExperience.location})</p>
+        <div className="relative ml-2 md:ml-4">
+
+            {/* Timeline line */}
+            <div className="absolute left-0 top-2 bottom-2 w-px bg-darkmint"></div>
+
+            <div className="space-y-10">
+
+                {work.map((workExperience, index) => (
+                    <article
+                        key={workExperience._id || index}
+                        className="relative pl-9 md:pl-14"
+                    >
+
+                        {/* Timeline marker */}
+                        <div className="absolute left-[-17px] top-6 w-9 h-9 rounded-full bg-darkgreen border-4 border-beige flex items-center justify-center text-mint shadow-sm">
+                            <PiBriefcase size={17} />
+                        </div>
+
+                        {/* Experience card */}
+                        <div className="bg-white rounded-xl border border-darkmint/40 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+
+                            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-3 mb-5">
+
+                                <div>
+                                    <h3 className="font-gilda text-2xl md:text-3xl text-darkgreen mb-2">
+                                        {workExperience.name}
+                                    </h3>
+
+                                    <div className="flex items-center gap-2 text-gray-500">
+                                        <CiLocationOn size={18} />
+                                        <span className="font-nunito text-sm italic">
+                                            {workExperience.company}
+                                            {workExperience.location && ` · ${workExperience.location}`}
+                                        </span>
+                                    </div>
                                 </div>
-                                <div className="flex justify-center items-center">
-                                    <IoCalendarOutline className="ml-2 text-darkmint" />
-                                    <p className="text-sm font-gilda italic pl-2 pb-3 text-gray-600">{workExperience.date}</p>
+
+                                <div className="flex items-center gap-2 text-green shrink-0">
+                                    <IoCalendarOutline size={17} />
+                                    <span className="font-nunito text-sm">
+                                        {workExperience.date}
+                                    </span>
                                 </div>
-                                <p className="text-gray-700 mb-4 leading-relaxed">{workExperience.description}</p>
-                                <div className="flex flex-wrap justify-center gap-2 pt-3">
-                                    {workExperience.tags.map((tag, index) => (
+
+                            </div>
+
+                            <p className="font-nunito text-gray-700 leading-relaxed">
+                                {workExperience.description}
+                            </p>
+
+                            {workExperience.tags?.length > 0 && (
+                                <div className="flex flex-wrap gap-2 mt-6 pt-5 border-t border-darkmint/30">
+
+                                    {workExperience.tags.map((tag, tagIndex) => (
                                         <span
-                                            key={index}
-                                            className="bg-darkmint text-white px-3 py-1 rounded-full text-sm shadow hover:bg-lightmint transition-colors duration-200 font-gilda"
-                                        >{tag}
+                                            key={tagIndex}
+                                            className="bg-mint/70 text-darkgreen px-3 py-1 rounded-full text-xs md:text-sm font-nunito"
+                                        >
+                                            {tag}
                                         </span>
                                     ))}
+
                                 </div>
-                            </div>
-                        </VerticalTimelineElement>
-                    ))
-                    )}
-            </VerticalTimeline>
+                            )}
+
+                        </div>
+
+                    </article>
+                ))}
+
+            </div>
         </div>
     )
 }

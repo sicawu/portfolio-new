@@ -74,9 +74,9 @@ function ProjectList() {
                     <p className="font-nunito text-base md:text-lg
                         text-brown leading-relaxed">
                         A collection of projects, experiments and things
-                        I've enjoyed creating while exploring the digital world.
+                        I've enjoyed creating while new languages & technologies.
                         Some are works in progress, others are little ideas
-                        brought to life.
+                        brought to life. Don't take everything too seriously!
                     </p>
 
                 </div>

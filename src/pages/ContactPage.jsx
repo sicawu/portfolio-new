@@ -84,15 +84,14 @@ function ContactPage() {
 
                     <button
                         onClick={handleDownload}
-                        className="inline-flex items-center justify-center
-                        mt-9 px-6 py-3 gap-3
-                        text-beige bg-darkgreen border border-darkgreen
-                        rounded-full font-nunito font-medium
-                        hover:bg-green hover:border-green
-                        transition-all duration-200
+                   className="inline-flex items-center gap-3 
+                        mt-9 px-7 py-3
+                        bg-darkgreen text-beige rounded-full
+                        font-nunito text-sm tracking-wide
+                        hover:bg-green hover:-translate-y-0.5
+                        transition-all duration-300
                         focus-visible:outline focus-visible:outline-2
-                        focus-visible:outline-offset-4
-                        focus-visible:outline-darkgreen"
+                        focus-visible:outline-offset-4 focus-visible:outline-darkgreen"
                     >
                         <IoCloudDownloadOutline
                             size={20}

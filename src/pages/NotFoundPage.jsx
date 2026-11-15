@@ -1,28 +1,53 @@
+
 import { Link } from "react-router-dom"
 
 function NotFoundPage() {
-    const poem = ["404, a webpage astray.", "Lost in the web's array.", "But fear not, let's not dismay.", "Unexpected turns may pave a beautiful way."]
+    const poem = [
+        "404, a webpage astray.",
+        "Lost in the web's array.",
+        "But fear not, let's not dismay.",
+        "Unexpected turns may pave a beautiful way."
+    ]
+
     return (
-        <>
-            <div className="hero heroFive min-h-[calc(100vh-56px)] flex justify-center items-center overflow-hidden">
-                <div>
-                    <h1 className="my-10 mx-3 bg-beige text-4xl text-green font-gilda">An AI Anthem</h1>
-                    <div className="flex flex-col justify-center gap-2">
-                        {poem.map((poemLine, index) =>
-                            <div key={index}>
-                                <h2 className="text-2xl font-gilda text-beige bg-green bg-opacity-70 mx-5 py-1">{poemLine}</h2>
-                            </div>
-                        )}
+        <main className="hero heroFive min-h-[calc(100vh-56px)] relative isolate flex items-center justify-center text-center px-5 py-20">
+
+            <div className="absolute inset-0 bg-black/30 -z-10"></div>
+
+            <div className="max-w-3xl mx-auto">
+
+                <h1 className="font-gilda text-5xl md:text-7xl text-beige mb-5">
+                    You shouldn't be here, you sneaky thing!
+                </h1>
+
+                <p className="font-nunito text-beige text-lg mb-10">
+                    The page you're looking for doesn't exist.
+                    But hey, at least I've got a poem for you.
+                </p>
+
+                <div className="max-w-xl mx-auto bg-beige/90 px-6 py-9 md:px-12 md:py-12 shadow-lg mb-10">
+
+                    <p className="font-nunito text-xs uppercase tracking-[0.25em] text-darkgreen mb-8">
+                        throw new Error("Wrong Turn")
+                    </p>
+
+                    <div className="font-gilda text-xl md:text-2xl italic text-darkgreen leading-relaxed space-y-4">
+                        {poem.map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))}
                     </div>
-                    <Link to="/contact">
-                        <button
-                            className="inline-flex items-center justify-center h-9 my-10 p-3 bg-green text-beige border border-green rounded-lg focus:outline-none hover:bg-darkmint shadow"
-                            >Trust the Process
-                        </button>
-                    </Link>
+
                 </div>
+
+                <Link
+                    to="/"
+                    className="inline-flex items-center justify-center px-7 py-3 bg-mint text-darkgreen rounded-full font-nunito font-semibold hover:bg-beige transition-colors duration-300"
+                >
+                    Mum, take me home!
+                </Link>
+
             </div>
-        </>
+        </main>
     )
 }
 
