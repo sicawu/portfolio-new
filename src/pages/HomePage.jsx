@@ -10,7 +10,7 @@ function HomePage() {
         "Full-Stack Dev in Progress",
         "Part-Time Yacht Chef",
         "Occasional PADI Divemaster",
-        "Creative Soul"
+        "Creative Crafter"
     ]
 
     return (
@@ -31,8 +31,6 @@ function HomePage() {
                     <h1 className="text-5xl sm:text-6xl md:text-8xl text-beige font-gilda mb-6 tracking-wide">
                         Hello World.
                     </h1>
-
-      
 
                     {/* Professional identities */}
                     <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-3 max-w-3xl mx-auto mb-12">

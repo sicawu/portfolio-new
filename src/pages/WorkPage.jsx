@@ -175,7 +175,7 @@ function WorkPage() {
                                 Ironhack · January-March 2024
                             </p>
 
-                            <p className="font-nunito text-sm font-semibold text-darkgreen">
+                            <p className="font-nunito text-sm font-semibold text-darkgreen mb-4">
                                 Intensive full-time bootcamp in Web Development including three finished projects, several mini projects and labs. Both individual coding and pair-coding.
                             </p>
 
