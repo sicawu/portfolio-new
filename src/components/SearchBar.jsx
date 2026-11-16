@@ -1,17 +1,9 @@
-
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 
 function SearchBar({ searchTerm, handleSearch }) {
   return (
     <div className="w-full max-w-xl mx-auto my-10">
-      <label
-        htmlFor="project-search"
-        className="block font-nunito text-sm text-darkgreen mb-2"
-      >
-        Find something specific
-      </label>
-
       <div className="relative group">
         <FaSearch
           className="absolute left-5 top-1/2 -translate-y-1/2 
@@ -22,7 +14,7 @@ function SearchBar({ searchTerm, handleSearch }) {
         <input
           id="project-search"
           type="search"
-          placeholder="Search by skill, technology or project..."
+          placeholder="Search for skill, e.g. LLM, React, MongoDB..."
           value={searchTerm}
           onChange={handleSearch}
           className="w-full bg-white/70 border border-darkmint/70
@@ -34,10 +26,6 @@ function SearchBar({ searchTerm, handleSearch }) {
           focus:ring-2 focus:ring-darkmint/50"
         />
       </div>
-
-      <p className="font-nunito text-xs text-gray-500 mt-3 ml-4">
-        e.g. React, MongoDB, Python, SEO
-      </p>
     </div>
   );
 }
