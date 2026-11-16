@@ -25,7 +25,7 @@ function AboutPage() {
 
                 <p className="font-nunito text-base md:text-lg
                     text-beige max-w-xl mx-auto leading-relaxed">
-                    You made it that far, I'm happy to have you here! Let me share a little more about myself, my passions and what makes me tick.
+                    You made it that far, I'm happy to have you here! Let me share a little more personal stuff about myself, my passions and what makes me tick.
                 </p>
 
                 <a
@@ -62,9 +62,8 @@ function AboutPage() {
                         <p>
                             Born and raised in Germany, I'm currently navigating life somewhere between the digital world and the open ocean. 
                             You'll find me wherever the wind takes me (sorry for the bad jokes), 
-                            with a laptop never too far away.
-                            I may have a wandering spirit, but that doesn't mean I'm always chasing the next horizon. 
-                            I'm just as happy to drop anchor when I find a place that feels like home.
+                            with a laptop never too far away. I think it's the combination of both worlds that make me thrive. 
+                            And if I start something, you can be sure I'm invested.
                         </p>
 
                         <p>
@@ -187,23 +186,23 @@ function AboutPage() {
 
                             <p>
                               Yoga has been a huge game-changer in my life. 
-                              It helps me slow down, recharge my batteries and reconnect with myself in a bustling world. 
-                              And, to be honest, it also manages to switch my brain off once in a while. 
-                              The good thing about it? I can practise almost anywhere and at any time.
+                              It helps me slow down, recharge my batteries and reconnect with myself in a busy world. 
+                              And, to be honest, it also manages to shut my brain off once in a while. 
+                              What I love about it? I can practise almost anywhere and at any time — so there are no excuses.
                             </p>
 
                             <p>
                               Completing my yoga teacher training in Pai, Thailand, 
-                              helped me deepen my knowledge, learn how to practise safely 
-                              and build strength and confidence — in my own practice and overall life.
+                              helped me deepen my knowledge about yoga, learn how to practise safely 
+                              and build strength and confidence — in my own practice, but also overall life.
                             </p>
 
                             <p>
                               One of the biggest lessons I've learned since starting yoga 
                               is acceptance and openness. 
-                              Everyone has their own story and individual physical needs. 
+                              Everyone has their own story and individual (physical) needs. 
                               Learning to accept that we're all different — and that we're enough just as we are — 
-                              is something I try to carry into everyday life, too.
+                              is so important in daily life and while working with others.
                             </p>
 
                         </div>
@@ -250,7 +249,10 @@ function AboutPage() {
                                 friends and family, it was about time to
                                 take the next step. My little crafting spot
                                 said hello to the online world a couple of
-                                years ago. To be fair, though, it doesn't
+                                years ago. Besides that, I also love creating
+                                customised pieces and bringing someone
+                                else's ideas out of their head and into
+                                reality. To be fair, though, it doesn't
                                 get constant love and attention — travelling
                                 with a sewing machine isn't exactly easy!
                             </p>
@@ -260,18 +262,11 @@ function AboutPage() {
                                 travel accessories and bags that are still
                                 loved a couple of years down the line,
                                 rather than contributing to the fast-paced
-                                world of consumption. I also love creating
-                                customised pieces and bringing someone
-                                else's ideas out of their head and into
-                                reality.
-                            </p>
-
-                            <p>
-                                I carefully select high-quality fabrics
+                                world of consumption. 
+                                Therefore, I carefully select high-quality fabrics
                                 and pay attention to natural, durable
                                 materials and timeless designs.
                             </p>
-
                         </div>
 
                         <a

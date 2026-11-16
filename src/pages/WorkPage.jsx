@@ -61,7 +61,7 @@ function WorkPage() {
                     </p>
 
                     <h2 className="font-gilda text-3xl md:text-5xl mb-8">
-                        A Quick Summary Of My Progression.
+                        A Quick Summary of My Steps.
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 md:gap-16">
@@ -124,7 +124,7 @@ function WorkPage() {
 
                     <div className="mb-10">
                         <p className="font-nunito text-sm uppercase tracking-[0.2em] text-green mb-3">
-                            Always learning
+                            The foundation of my knowledge
                         </p>
 
                         <h2 className="font-gilda text-3xl md:text-4xl text-darkgreen">
@@ -148,16 +148,13 @@ function WorkPage() {
                             </p>
 
                             <h3 className="font-gilda text-2xl text-darkgreen mb-2">
-                                Dual Bachelor's Degree
+                                Dual Bachelor's Degree in Tourism Economics
                             </h3>
-
-                            <p className="font-nunito text-sm font-semibold text-brown">
-                                Tourism Economics
-                            </p>
 
                             <p className="font-nunito text-sm text-brown/70 mt-1 mb-4">
                                 IU Duales Studium · 2014-2018 · Düsseldorf, Germany
                             </p>
+
                             <p className="font-nunito text-sm font-semibold text-brown">
                                 Bachelor's thesis: “User Experience & Tourism Websites: The Role and Potential of Travel Inspiration Landing Pages in Creating a Successful Online Presence.”
                             </p>
@@ -174,12 +171,12 @@ function WorkPage() {
                                 Full-Stack Development
                             </h3>
 
-                            <p className="font-nunito text-sm font-semibold text-darkgreen">
-                                Intensive full-time bootcamp in Web Development including three finished projects, several mini projects and labs. Both individual coding and pair-coding.
-                            </p>
-
                             <p className="font-nunito text-sm text-darkgreen/70 mt-1 mb-4">
                                 Ironhack · January-March 2024
+                            </p>
+
+                            <p className="font-nunito text-sm font-semibold text-darkgreen">
+                                Intensive full-time bootcamp in Web Development including three finished projects, several mini projects and labs. Both individual coding and pair-coding.
                             </p>
 
                             <div className="flex flex-wrap gap-2">
@@ -193,7 +190,6 @@ function WorkPage() {
                                 ))}
                             </div>
                         </div>
-
                     </div>
 
 
@@ -262,7 +258,7 @@ function WorkPage() {
 
                     <div>
                         <p className="font-nunito text-darkgreen/80 text-base md:text-lg leading-relaxed mb-8">
-                            During my Full-Stack Development Bootcamp and self-studies,
+                            During my Full-Stack Dev Bootcamp and self-studies,
                             I got to put theory into practice straight away.
                             Since then, I've been working on my own projects,
                             exploring new technologies and getting more
