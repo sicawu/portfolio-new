@@ -14,6 +14,7 @@ function ProjectList() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(false);
 
+    // Fetch projects from the API
     useEffect(() => {
         const getAllProjects = async () => {
             try {
@@ -33,25 +34,31 @@ function ProjectList() {
         getAllProjects();
     }, [API_URL]);
 
+    // Handle search input
     const handleSearch = (event) => {
         setSearchTerm(event.target.value);
     };
 
-    const filteredProjects = projects.filter((project) => {
-        const search = searchTerm.toLowerCase();
+    // Filter and sort projects
+    const filteredProjects = projects
+        .filter((project) => {
+            const search = searchTerm.toLowerCase();
 
-        const nameMatch = project.name?.toLowerCase().includes(search);
+            const nameMatch = project.name
+                ?.toLowerCase()
+                .includes(search);
 
-        const descriptionMatch = project.description
-            ?.toLowerCase()
-            .includes(search);
+            const descriptionMatch = project.description
+                ?.toLowerCase()
+                .includes(search);
 
-        const languageMatch = project.language?.some((language) =>
-            language.toLowerCase().includes(search)
-        );
+            const languageMatch = project.language?.some((language) =>
+                language.toLowerCase().includes(search)
+            );
 
-        return nameMatch || descriptionMatch || languageMatch;
-    });
+            return nameMatch || descriptionMatch || languageMatch;
+        })
+        .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
 
     return (
         <section className="bg-beige min-h-screen px-5 py-24 md:py-32">
@@ -74,9 +81,10 @@ function ProjectList() {
                     <p className="font-nunito text-base md:text-lg
                         text-brown leading-relaxed">
                         A collection of fun projects, experiments and things
-                        I've enjoyed creating while new languages & technologies.
-                        Some are works in progress, others are little ideas
-                        brought to life. Don't take everything too seriously!
+                        I've enjoyed creating while exploring new languages
+                        and technologies. Some are works in progress, others
+                        are little ideas brought to life. Don't take everything
+                        too seriously!
                     </p>
 
                 </div>
@@ -128,6 +136,7 @@ function ProjectList() {
                 {/* Error state */}
                 {!isLoading && error && (
                     <div className="text-center py-16">
+
                         <h2 className="font-gilda text-2xl
                             text-darkgreen mb-3">
                             Oops, something went wrong.
@@ -137,6 +146,7 @@ function ProjectList() {
                             I couldn't load the projects right now.
                             Please try again later.
                         </p>
+
                     </div>
                 )}
 
@@ -220,49 +230,53 @@ function ProjectList() {
 
 
                                         {/* Project links */}
-                                        <div className="flex items-center
-                                            gap-6 border-t border-darkmint/60
-                                            mt-7 pt-5">
+                                        {(project.deployedUrl || project.gitUrl) && (
+                                            <div className="flex items-center
+                                                gap-6 border-t border-darkmint/60
+                                                mt-7 pt-5">
 
-                                            {project.deployedUrl && (
-                                                <a
-                                                    href={project.deployedUrl}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    aria-label={`Visit ${project.name} website`}
-                                                    className="flex items-center
-                                                        gap-2 font-nunito
-                                                        text-sm font-medium
-                                                        text-darkgreen
-                                                        hover:text-green
-                                                        transition-colors"
-                                                >
-                                                    <TbWorldWww size={19} />
-                                                    Live Demo
-                                                    <PiArrowUpRight size={15} />
-                                                </a>
-                                            )}
+                                                {/* Live Demo - only if URL exists */}
+                                                {project.deployedUrl && (
+                                                    <a
+                                                        href={project.deployedUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        aria-label={`Visit ${project.name} website`}
+                                                        className="flex items-center
+                                                            gap-2 font-nunito
+                                                            text-sm font-medium
+                                                            text-darkgreen
+                                                            hover:text-green
+                                                            transition-colors"
+                                                    >
+                                                        <TbWorldWww size={19} />
+                                                        Live Demo
+                                                        <PiArrowUpRight size={15} />
+                                                    </a>
+                                                )}
 
-                                            {project.gitUrl && (
-                                                <a
-                                                    href={project.gitUrl}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    aria-label={`View ${project.name} source code on GitHub`}
-                                                    className="flex items-center
-                                                        gap-2 font-nunito
-                                                        text-sm font-medium
-                                                        text-darkgreen
-                                                        hover:text-green
-                                                        transition-colors"
-                                                >
-                                                    <FaGithub size={18} />
-                                                    GitHub
-                                                    <PiArrowUpRight size={15} />
-                                                </a>
-                                            )}
+                                                {/* GitHub - only if URL exists */}
+                                                {project.gitUrl && (
+                                                    <a
+                                                        href={project.gitUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        aria-label={`View ${project.name} source code on GitHub`}
+                                                        className="flex items-center
+                                                            gap-2 font-nunito
+                                                            text-sm font-medium
+                                                            text-darkgreen
+                                                            hover:text-green
+                                                            transition-colors"
+                                                    >
+                                                        <FaGithub size={18} />
+                                                        GitHub
+                                                        <PiArrowUpRight size={15} />
+                                                    </a>
+                                                )}
 
-                                        </div>
+                                            </div>
+                                        )}
 
                                     </article>
                                 ))}
