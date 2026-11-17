@@ -58,8 +58,8 @@ function ProjectList() {
 
             return nameMatch || descriptionMatch || languageMatch;
         })
-        .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
-
+        .sort((a, b) => (b.order ?? -Infinity) - (a.order ?? -Infinity));
+        
     return (
         <section className="bg-beige min-h-screen px-5 py-24 md:py-32">
 
